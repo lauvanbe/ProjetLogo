@@ -1,0 +1,33 @@
+﻿@model IEnumerable<ProjetLogo.Models.Personne>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Pratitient</h2>
+
+<table class="table table-striped table-hover">
+    <thead>
+    <tr>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Email</th>
+        <th>Numéro de GSM</th>
+        <th>Numéro de téléphone fixe</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var personne in Model)
+    {
+    <tr>
+        <td>@personne.Nom</td>
+        <td>@personne.Prenom</td>
+        <td>@personne.Email</td>
+        <td>@personne.Gsm</td>
+        <td>@personne.TelFixe</td>
+    </tr>
+     }
+
+ 
+    </tbody>
+</table>

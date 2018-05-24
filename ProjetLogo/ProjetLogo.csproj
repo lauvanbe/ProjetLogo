@@ -198,16 +198,39 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PratitientController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805242045428_InitialisationModel.cs" />
+    <Compile Include="Migrations\201805242045428_InitialisationModel.Designer.cs">
+      <DependentUpon>201805242045428_InitialisationModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805242047491_AjoutPersonne.cs" />
+    <Compile Include="Migrations\201805242047491_AjoutPersonne.Designer.cs">
+      <DependentUpon>201805242047491_AjoutPersonne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805242052385_PredifinirFonctionEtSpecialisation.cs" />
+    <Compile Include="Migrations\201805242052385_PredifinirFonctionEtSpecialisation.Designer.cs">
+      <DependentUpon>201805242052385_PredifinirFonctionEtSpecialisation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805242102305_PredifinirSpecialisation.cs" />
+    <Compile Include="Migrations\201805242102305_PredifinirSpecialisation.Designer.cs">
+      <DependentUpon>201805242102305_PredifinirSpecialisation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Fonction.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Personne.cs" />
+    <Compile Include="Models\Pratitient.cs" />
+    <Compile Include="Models\Specialisation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-logo.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -266,6 +289,8 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Pratitient\Index.cshtml" />
+    <Content Include="Views\Shared\_NavBar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -282,6 +307,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201805242045428_InitialisationModel.resx">
+      <DependentUpon>201805242045428_InitialisationModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805242047491_AjoutPersonne.resx">
+      <DependentUpon>201805242047491_AjoutPersonne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805242052385_PredifinirFonctionEtSpecialisation.resx">
+      <DependentUpon>201805242052385_PredifinirFonctionEtSpecialisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805242102305_PredifinirSpecialisation.resx">
+      <DependentUpon>201805242102305_PredifinirSpecialisation.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
